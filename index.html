@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Fresh and Clean</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Bootstrap icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body class="d-flex flex-column h-100">
+        <main class="flex-shrink-0">
+            <!-- Navigation-->
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <div class="container px-5">
+                    <a class="navbar-brand d-flex align-items-center" href="index.html">
+                        <img src="assets/fresh_and_clean_logo.png" alt="Fresh & Clean Logo" height="110" class="me-2">
+                        
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item"><a class="nav-link" href="index.html">Acasă</a></li>
+                            <li class="nav-item"><a class="nav-link" href="about.html">Despre</a></li>
+                            
+                            <li class="nav-item"><a class="nav-link" href="pricing.html">Prețuri</a></li>
+                            <li class="nav-item"><a class="nav-link" href="portfolio-overview.html">Portfoliu</a></li>
+                            <li class="nav-item"><a class="nav-link" href="blog-home.html">Blog</a></li>
+                            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+
+                        </ul>
+                    </div>
+                </div>
+                
+            </nav>
+            <!-- Header-->
+            <header class="bg-dark py-5">
+                <div class="container px-5">
+                    <div class="row gx-5 align-items-center justify-content-center">
+                      <div class="col-lg-8 col-xl-7 col-xxl-6">
+                        <div class="my-5 text-center text-xl-start">
+                          <h1 class="display-5 fw-bolder text-white mb-2">Curățenie impecabilă pentru casa și biroul tău</h1>
+                          <p class="lead fw-normal text-white-50 mb-4">
+                            La Fresh & Clean credem că un spațiu curat înseamnă mai mult decât ordine și strălucire – înseamnă confort, sănătate și liniște. Echipa noastră de profesioniști îți oferă servicii de curățenie adaptate nevoilor tale, astfel încât tu să te bucuri de timpul liber, iar noi să ne ocupăm de restul.
+                          </p>
+                          <div class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xl-start">
+                            <a class="btn btn-primary btn-lg px-4 me-sm-3" href="pricing.html">Vezi Prețuri</a>
+                            <a class="btn btn-outline-light btn-lg px-4" href="about.html">Află mai multe</a>
+                          </div>
+                        </div>
+                      </div>
+                  
+                      <!-- SLIDER BEFORE/AFTER -->
+                      <div class="before-after-slider my-5">
+                        <img src="assets/before.png" alt="Before" class="before-img">
+                        <img src="assets/after.png" alt="After" class="after-img">
+                      
+                        <!-- Etichete -->
+                        <span class="label before-label">Înainte</span>
+                        <span class="label after-label">După</span>
+                      
+                        <div class="slider-handle"></div>
+                      </div>
+                      
+                      
+                    </div>
+                  </div>
+                  
+                  <!-- CSS -->
+                  <style>
+                    /* Etichete "Before" & "After" */
+.before-after-slider .label {
+  position: absolute;
+  top: 15px;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 4;
+  user-select: none;
+}
+
+.before-after-slider .before-label {
+  left: 15px;
+}
+
+.before-after-slider .after-label {
+  right: 15px;
+}
+
+                  .before-after-slider {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  height: 400px;
+  overflow: hidden;
+  border-radius: 10px;
+  margin: 0 auto;
+  box-shadow: 0 0 15px rgba(0,0,0,0.3);
+}
+
+.before-after-slider img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.before-after-slider .after-img {
+  z-index: 1;
+}
+
+.before-after-slider .before-img {
+  z-index: 2;
+  clip-path: inset(0 50% 0 0);
+  transition: clip-path 0.2s ease;
+}
+
+.before-after-slider .slider-handle {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 4px;
+  background-color: #00aaff;
+  cursor: ew-resize;
+  z-index: 3;
+}
+
+.before-after-slider .slider-handle::before {
+  content: "⇆";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+  color: #fff;
+  background-color: #00aaff;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 5px rgba(0,0,0,0.3);
+}
+
+                  </style>
+                  
+                  <!-- JS -->
+                  <script>
+                  const slider = document.querySelector('.before-after-slider');
+                  if (slider) {
+                    const before = slider.querySelector('.before-img');
+                    const handle = slider.querySelector('.slider-handle');
+                    let isDragging = false;
+                  
+                    const updateSlider = (x) => {
+                      const rect = slider.getBoundingClientRect();
+                      let pos = ((x - rect.left) / rect.width) * 100;
+                      pos = Math.max(0, Math.min(pos, 100));
+                      before.style.clipPath = `inset(0 ${100 - pos}% 0 0)`;
+                      handle.style.left = `${pos}%`;
+                    };
+                  
+                    handle.addEventListener('mousedown', () => (isDragging = true));
+                    window.addEventListener('mouseup', () => (isDragging = false));
+                    window.addEventListener('mousemove', (e) => {
+                      if (!isDragging) return;
+                      updateSlider(e.clientX);
+                    });
+                  
+                    handle.addEventListener('touchstart', () => (isDragging = true));
+                    window.addEventListener('touchend', () => (isDragging = false));
+                    window.addEventListener('touchmove', (e) => {
+                      if (!isDragging) return;
+                      updateSlider(e.touches[0].clientX);
+                    });
+                  }
+                  </script>
+                  
+            </header>
+            <!-- Features section-->
+            <section class="py-5" id="features">
+                <div class="container px-5 my-5">
+                    <div class="row gx-5">
+                        <div class="col-lg-4 mb-5 mb-lg-0 text-center">
+                            <h2 class="fw-bolder mb-3">Zero murdărie. 100% energie.</h2>
+                            <img src="assets/curatenie3.jpeg" alt="Echipa de curățenie" class="img-fluid rounded shadow-sm energy-image">
+                          </div>
+                          
+                        <div class="col-lg-8">
+                            <div class="row gx-5 row-cols-1 row-cols-md-2">
+                                <div class="col mb-5 h-100">
+                                    <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-collection"></i></div>
+                                    <h2 class="h5">Cine suntem?</h2>
+                                    <p class="mb-0">Suntem o firmă de curățenie dedicată calității și satisfacției clienților noștri. Cu o echipă serioasă, echipamente moderne și soluții profesionale, garantăm rezultate impecabile de fiecare dată.</p>
+                                </div>
+                                <div class="col mb-5 h-100">
+                                    <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-building"></i></div>
+                                    <h2 class="h5">Misiunea noastră: </h2>
+                                    <p class="mb-0">Să aducem curățenie și prospețime în locuințe, birouri și spații comerciale, pentru ca tu să te bucuri de un mediu sănătos și plăcut.</p>
+                                </div>
+
+                                  
+                                  <div class="col mb-5 mb-md-0 h-100">
+                                    <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3">
+                                      <i class="bi bi-toggles2"></i>
+                                    </div>
+                                    <h2 class="h5">Serviciile noastre</h2>
+                                    <ul class="no-space-list">
+                                      <li>Curățenie rezidențială (apartamente, case, vile)</li>
+                                      <li>Curățenie birouri și spații comerciale</li>
+                                      <li>Curățenie generală sau de întreținere</li>
+                                      <li>Curățenie după constructor/renovare</li>
+                                      <li>Curățenie periodică (abonamente )</li>
+                                      <li>Spălare geamuri și vitrine</li>
+                                      <li>Servicii personalizate, la cererea clientului</li>
+                                    </ul>
+                                  </div>
+                                  <div class="col mb-5 mb-md-0 h-100">
+                                    <div class="feature bg-primary bg-gradient text-white rounded-circle d-flex align-items-center justify-content-center mb-3">
+                                      <i class="bi bi-toggles2"></i>
+                                    </div>
+                                    <h2 class="h5">Valorile noastre:</h2>
+                                    <ul class="no-space-list">
+                                      <li>Profesionalism și responsabilitate</li>
+                                      <li>Respect față de client</li>
+                                      <li>Eficiență și calitate</li>
+                                      <li>Transparență și încredere</li>
+                                    </ul>
+                                  </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Testimonial section-->
+            <div class="py-5 bg-light">
+                <div class="container px-5 my-5">
+                    <div class="row gx-5 justify-content-center">
+                        <div class="col-lg-10 col-xl-7">
+                            <div class="text-center">
+                                <h4>Certificări și Asigurări</h4>
+                                <div class="fs-4 mb-4 fst-italic">"La Fresh & Clean, siguranța și încrederea clienților noștri sunt pe primul loc.
+                                    Echipa noastră este instruită și respectă proceduri clare de lucru.
+                                    Suntem acoperiți de asigurare de răspundere civilă, astfel încât bunurile și spațiile clienților sunt protejate.
+                                    Respectăm toate normele de igienă și securitate în muncă.
+                                    "</div>
+                                <div class="d-flex align-items-center justify-content-center">
+                                    <img 
+  class="rounded-circle me-3" 
+  src="assets/carmen.png" 
+  alt="..." 
+  width="70" 
+  height="70" 
+  style="object-fit: cover;"
+/>
+
+                                    <div class="fw-bold">
+                                        Carmen Augustinov
+                                        <span class="fw-bold text-primary mx-1">/</span>
+                                        CEO, Fresh & Clean
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Blog preview section-->
+            <section class="py-5">
+                <div class="container px-5 my-5">
+                    <div class="row gx-5 justify-content-center">
+                        <div class="col-12">
+                          <div class="text-center">
+                            <h2 class="fw-bolder">Valorile noastre</h2>
+                            <p class="lead fw-normal text-muted mb-5">
+                              Profesionalism cu zâmbet ⭐️ Ne dedicăm fiecărui client și fiecarei sarcini, pentru rezultate impecabile cu pasiune și energie pozitivă.
+                              Respect ⭐️ Respectăm spațiul, timpul și obiectele clienților, dar și colegii din echipă.
+                              Încredere ⭐️ Vrem să te simți liniștit știind că echipa noastră se ocupă de tot.
+                              Calitate ⭐️ Folosim produse și echipamente profesionale pentru curățenie de top.
+                              Grijă și atenție ⭐️ pentru tine, pentru spațiul tău și pentru fiecare detaliu.
+                              Grijă pentru mediu ⭐️ Alegem soluții prietenoase cu natura și sănătatea ta.
+                              Flexibilitate și adaptabilitate ⭐️ Ascultăm nevoile clienților și ne ajustăm serviciile pentru a le oferi cea mai bună experiență.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      
+                    <div class="row gx-5">
+                        <div class="col-lg-4 mb-5">
+                            <div class="card h-100 shadow border-0">
+                                <img class="card-img-top" src="assets/curatenie1.jpeg" alt="..." />
+                                <div class="card-body p-4">
+                                    <div class="badge bg-primary bg-gradient rounded-pill mb-2">Curațenie Clădiri Rezidențiale</div>
+                                    <a class="text-decoration-none link-dark stretched-link" href="#!"><h5 class="card-title mb-3">De ce să alegi Fresh & Clean</h5></a>
+                                    <ul style="list-style: none; padding-left: 0; margin: 0;">
+                                        <li>✔ Echipa instruită și de încredere</li>
+                                        <li>✔ Produse profesionale și ecologice</li>
+                                        <li>✔ Flexibilitate în program</li>
+                                        <li>✔ Raport calitate–preț corect</li>
+                                        <li>✔ Servicii rapide și eficiente</li>
+                                      </ul>
+                                      
+                                </div>
+                                <div class="card-footer p-4 pt-0 bg-transparent border-top-0">
+                                    <div class="d-flex align-items-end justify-content-between">
+                                       
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 mb-5">
+                            <div class="card h-100 shadow border-0">
+                                <img class="card-img-top" src="assets/curatenie2.jpeg" alt="..." />
+                                <div class="card-body p-4">
+                                    <div class="badge bg-primary bg-gradient rounded-pill mb-2">Ariel / Fairy / Bonux</div>
+                                    <a class="text-decoration-none link-dark stretched-link" href="#!"><h5 class="card-title mb-3">Echipamente și Produse Folosite</h5></a>
+                                    <p class="card-text mb-0">Pentru a garanta rezultate impecabile, folosim doar echipamente profesionale și soluții de curățenie sigure:
+                                        Aspiratoare industriale și mașini de spălat pardoseli pentru eficiență maximă.
+                                        Soluții profesionale de curățenie testate și avizate, prietenoase cu mediul.
+                                        Produse ecologice și hipoalergenice, potrivite pentru spații rezidențiale și birouri.
+                                        Accesorii moderne (lavete microfibră, mopuri profesionale, raclete pentru geamuri etc.), pentru o curățenie rapidă și eficientă.
+                                        </p>
+                                </div>
+                                <div class="card-footer p-4 pt-0 bg-transparent border-top-0">
+                                    <div class="d-flex align-items-end justify-content-between">
+                                   
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 mb-5">
+                            <div class="card h-100 shadow border-0">
+                                <img class="card-img-top" src="assets/curatenie4.jpg" alt="..." />
+                                <div class="card-body p-4">
+                                    <div class="badge bg-primary bg-gradient rounded-pill mb-2">Timișoara</div>
+                                    <a class="text-decoration-none link-dark stretched-link" href="#!"><h5 class="card-title mb-3">Contact</h5></a>
+                                    <p class="card-text mb-0">Ai nevoie de o ofertă personalizată? Suntem aici pentru tine!
+
+                
+                                        </p>
+                                        <br>
+                                        <ul style="list-style: none; padding-left: 0; margin: 0;">
+                                            <li>📞 Telefon: 0725994144</li>
+                                            <li>📧 Email: carmen@freshandclean.ro</li>
+                                            <li>💻 Facebook: Fresh&Clean</li>
+                                            <li>👍 Ne găsești în: Timișoara de luni până duminică în intervalul orar 8-20</li>
+                                            <li>💡  Servicii rapide și eficiente</li>
+                                          </ul>
+                                </div>
+                                <div class="card-footer p-4 pt-0 bg-transparent border-top-0">
+                                   
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Call to action-->
+                    <aside class="bg-primary bg-gradient rounded-3 p-4 p-sm-5 mt-5">
+                        <div class="d-flex align-items-center justify-content-between flex-column flex-xl-row text-center text-xl-start">
+                            <div class="mb-4 mb-xl-0">
+                                <div class="fs-3 fw-bold text-white">Produse și servicii, livrate la ușă.</div>
+                                <div class="text-white-50">Abonează-te la newsletter-ul nostru pentru cele mai recente actualizări de prețuri.
+                                </div>
+                            </div>
+                            <div class="ms-xl-4">
+                                <div class="input-group mb-2">
+                                    <input class="form-control" type="text" placeholder="Adresa E-mail..." aria-label="Email address..." aria-describedby="button-newsletter" />
+                                    <button class="btn btn-outline-light" id="button-newsletter" type="button">Înscrie-te</button>
+                                </div>
+                                <div class="small text-white-50">Ne pasă de confidențialitate și nu vom partaja niciodată datele dumneavoastră.</div>
+                            </div>
+                        </div>
+                    </aside>
+                </div>
+            </section>
+        </main>
+        <!-- Footer-->
+        <footer class="bg-dark py-4 mt-auto">
+            <div class="container px-5">
+                <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+                    <div class="col-auto"><div class="small m-0 text-white">Copyright &copy; Fresh & Clean 2025</div></div>
+                    <div class="col-auto">
+                       
+                        <a class="link-light small" href="#!">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
